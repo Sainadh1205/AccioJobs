@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+body {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+
+.registration-form{
+    width:80%;
+    margin:10% auto;
+    border:2px solid black;
+    border-radius: 10px;
+    padding:25px;
+    background-color: #fff;
+    
+}
+.registration-form h1{
+    font-family: "Sansita Swashed";
+    
+}
