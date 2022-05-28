@@ -39,7 +39,7 @@
 
 .toDoCard{
     margin: 15px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px white;
 }
 .toDoCard .card-header{
     display: flex;
