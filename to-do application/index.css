@@ -1,0 +1,59 @@
+.container{
+    padding: 0;
+    margin: 20px auto;
+}
+
+.outerBlock{
+    height: 100vh;
+}
+.outerBlock .col-md-4{
+    padding: 0;
+}
+
+.toDoSection{
+    border: 2px solid grey;
+    height: 100%;
+    margin: 10px;
+}
+
+.toDoSection .display-4{
+    text-align: center;
+    background-color: bisque;
+    padding: 5px 0;
+}
+
+.mainBtn{
+    width: 100%;
+    text-align: center;
+}
+
+.col-12{
+    border: 1px solid grey;
+    padding: 8px ;
+    margin-bottom: 5px;
+}
+.col-12 button{
+    float: right;
+    margin: 0px 3px;
+}
+
+.toDoCard{
+    margin: 15px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.toDoCard .card-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: none;
+}
+.card-title{
+    margin-bottom: 20px;
+}
+.card-body .btn-danger{
+    float: right;
+}
+
+.inputDate{
+    margin-top: 1rem;
+}
