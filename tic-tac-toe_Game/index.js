@@ -26,7 +26,7 @@ const ticTacToe = (colIndex) => {
         let x = checkWinningStatus()
         if(x != 'noWinner'){
             flag = true
-            x === 'X' ? turnn.innerText = `Player ${x} won!` : turnn.innerText = `Player ${x} won!`
+            x === 'X' ? turnn.innerText = `Congratulations Player ${x} won!` : turnn.innerText = `Congratulations Player ${x} won!`
          
             turnn.style.backgroundColor = 'rgba(33, 150, 240, 1)'
             return
@@ -50,7 +50,7 @@ const checkWinningStatus = () => {
 
 function addColor(indexArr){
     indexArr.forEach(element => {
-        columns[element].style.backgroundColor = 'rgba(33, 150, 240, 1)'
+        columns[element].style.backgroundColor = 'rgba(255, 0, 0, 1)'
     });
 }
 
