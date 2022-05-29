@@ -76,3 +76,6 @@ h2 {
 #btn2:hover{
     background-color: orangered;
 }
+.col:hover{
+    transform: scale(1.1);
+}
