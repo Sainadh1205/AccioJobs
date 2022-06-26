@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>OrderManagementV2</title>
+  </head>
+  <body>
+    <!------------------------------------    NAVBAR   ------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-drak bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-success sign-in" type="submit">
+              Sign In
+            </button>
+            <button class="btn btn-outline-danger" type="submit">logout</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
+    <!-------------------------------------- Heading Sectiion  ------------------------------>
+
+    <div class="container">
+      <div class="main-header">
+        <h1 class="display-4 main-heading">Order Status Management</h1>
+        <div class="search">
+          <input
+            class="form-control form-control-lg order-id-input"
+            type="text"
+            placeholder="Enter the order ID to execute: "
+            id="order-id-input"
+          />
+
+          <div class="btn-outer">
+            <button
+              class="btn btn-dark btn-lg execute-btn"
+              onclick="executeOrder()"
+            >
+              Execute
+            </button>
+          </div>
+        </div>
+        <h1 id="deletedOrder"></h1>
+      </div>
+
+      <!--------------------------------------    Main-Section   ------------------------------->
+
+      <!-- // in this div we create new div's using js -->
+      <div class="row" id="parent-div"></div>
+    </div>
+
+    <!----------------------------------------     JS files  ------------------------------------>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <script src="js/orderStatus.js"></script>
+  </body>
+</html>
