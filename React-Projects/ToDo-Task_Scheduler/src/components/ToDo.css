@@ -1,0 +1,12 @@
+
+.action{
+    display: flex;
+    float: right;
+    flex-direction: row;
+    margin-right: -20px;
+}
+.todo{
+    text-align: left;
+    float: left;
+}
+
