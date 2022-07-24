@@ -6,8 +6,6 @@ body {
   #home::before{
       content: "";
       position: absolute;
-      background: url(https://images.idgesg.net/images/article/2018/08/5_password-best-practices_unique-passwords_authentication-100768646-large.jpg?auto=webp&quality=85,70)
-        no-repeat center center/cover;
       height: 660px;
       top: 0px;
       left: 0px;
