@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbs</title>
+</head>
+
+
+<body >
+    <div style="text-align: center; background-color: aquamarine;">
+        <h1>
+            Features 
+        </h1>
+        <hr>
+        <p>
+            -> For security there is a prompt question given so that who can answer only can enter the page , if given answer is wrong ,it alerts for wrong answer and asks again to enter the value <br>
+            <h3>
+                2 Button bulb
+            </h3>
+           
+            1. Asks confirmation for on and off of the button <br>
+            2. Gives an alert saying bulb is already on/off if we press the on/off button in same state. <br>
+            <h3>
+                1 Button bulb
+            </h3>
+            1. Bulb on and off functions are taken care of only one button. <br>
+            2. Asks for do u want to on/off the bulb.
+        </p>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <div  style="display: flex;">
+        <div style="padding-left: 15%;">
+            <h1>
+                1.
+            </h1>
+            <img id="image1" src = "https://www.w3schools.com/js/pic_bulboff.gif">
+            <br> <br>
+            <button id="on" onclick="bulbOn()">
+                On Bulb
+            </button>
+            <button style="margin-left: 20px;" id="off" onclick="bulbOff()">
+                Off bulb
+             </button>
+             <br>
+        </div>
+        
+       <hr>
+        <div style="margin-right: 20%;">
+            <h1>
+                2.
+            </h1>
+            <img id="image2" src = "https://www.w3schools.com/js/pic_bulboff.gif">
+            <br>
+            <button  onclick="tclick()">
+                image
+            </button>
+        </div>
+    </div>
+
+    <script>
+        var z = Number(prompt('enter the differnece between 100 and 10'))
+        while(z != 90)
+        {
+            alert('wrong answer')
+            var z = Number(prompt('enter the differnece between 100 and 10'))
+        }
+        
+        var q = true
+        function bulbOn()
+        {
+            if(q)
+            {
+                var a = confirm('Do u Want to on the bulb')
+                if(a)
+                {
+                    document.getElementById('image1').src = 'https://www.w3schools.com/js/pic_bulbon.gif'
+                    q = false
+                }
+                else
+                {
+                    alert('U didnt on the bulb')
+                }
+            }
+            else
+            {
+                alert('bulb is already on')
+            }
+        }
+
+        function bulbOff()
+        {
+
+            if(q == false)
+            {
+                var a = confirm('Do u want to off the bulb')
+                if(a)
+                {
+                    document.getElementById('image1').src='https://www.w3schools.com/js/pic_bulboff.gif'
+                    q = true;
+                }
+                else
+                {
+                    alert('u didnt off the bulb, save electricity ')
+                }
+            }
+            else
+            {
+                alert('bulb is already off')
+            }
+        }
+        
+        var x = false
+        function tclick()
+        {
+            
+            if(x == false)
+            {
+                
+                var a = confirm('Do u want to on bulb')
+                if(a)
+                {
+                    document.getElementById("image2").src='https://www.w3schools.com/js/pic_bulbon.gif'
+                    x = true
+                }
+                else
+                {
+                    alert('Didnt on the bulb')
+                }
+            }
+            else 
+            {
+                var a = confirm('Do u want to off bulb')
+                if(a)
+                {
+                    document.getElementById("image2").src="https://www.w3schools.com/js/pic_bulboff.gif"
+                    x =false
+                }
+                else
+                {
+                    alert('U didnt off the bulb')
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
