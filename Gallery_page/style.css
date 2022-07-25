@@ -1,0 +1,154 @@
+body{
+  background-image: url(https://i.ibb.co/Pwg4Q9k/polygon-blur-background.jpg);
+  border: 2px solid red;
+  border-radius: 10px;
+  background-size: cover;
+}
+.header {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 50px;
+  line-height: 0px;
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+  cursor: pointer;
+}
+
+.container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.panel {
+  position: relative;
+  height: 80vh;
+  /* width: 10vh; */
+  transition: 1s;
+  flex: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.panel.panel.selected {
+  flex: 8;
+  transition: all 1s ease-in;
+}
+
+.panel h3 {
+  font-size: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.selected h3 {
+  opacity: 1;
+  transition: opacity 300ms ease-in 400ms;
+}
+
+#panel1 {
+  background-image: url("https://images.unsplash.com/photo-1537164643720-f655ccf5086d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+#panel2 {
+  background-image: url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+#panel3 {
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");
+}
+
+#panel4 {
+  background-image: url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+}
+
+#panel5 {
+  background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+#panel6{
+  background-image: url("https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1882&q=80");
+}
+#panel7{
+  background-image: url("https://images.unsplash.com/photo-1606835361741-cb5cb02572c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+}
+#panel8{
+  background-image: url("https://images.unsplash.com/photo-1596430222039-4a2d7b4cd767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+#panel9{
+  background-image: url("https://images.unsplash.com/photo-1621508775638-a7a0c9c6f006?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+#panel10{
+  background-image: url("https://images.unsplash.com/photo-1603311122529-684f6862a5bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+}
+@media screen and (max-width:778px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .panel {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    flex: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .panel.panel.selected {
+    /* flex: 4; */
+    height: 40vh;
+    transition: all 1s ease-in;
+  }
+  
+}
+
+@media screen and (max-width:556px) {
+
+  .panel {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    flex: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .panel.panel.selected {
+    flex: 2;
+    transition: all 1s ease-in;
+  }
+  
+}
